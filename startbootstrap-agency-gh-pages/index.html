@@ -146,13 +146,12 @@ function Validar(){
     unidad = $('#unidades').val();
  
     if(titulo == 'Matrix'){
-        <?php if(unidad <= '2'){
+        if(unidad <= '2'){
             location.href = ""
         }else{
             alert("No hay tanto stock");
             $('#unidades').val('');
         }
-        ?>
     }else if (titulo == 'Psicosis'){
         if(unidad <='3'){
             location.href = ""
